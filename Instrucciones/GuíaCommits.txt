@@ -22,3 +22,34 @@ Commit - Estructuración del proyecto CRUDLaravel5.4-Vue
     -Se importa Bootstrap 3.3.7
   -Se edita el archivo app.js
   -Se usa el comando npm run dev
+Commit - Estructuración de controlador, migración, vistas y rutas
+  Nota: Se genera la estructura que llevará el proyecto
+  -Se crea la Base de Datos crudlaravel54-vue desde Laragon
+  -Se crea el modelo Task junto a su migración
+    -php artisan make:model Task -m
+  -Se modifica el archivo app.js quitando el código de prueba echo en el commit anterior
+  -Se le cambia el nombre a la vista welcome.blade.php por app.blade.php
+  -Se modifica la vista app.blade.php quitando lo que se había hecho en el commit anterior
+  -Se crea la vista dashboard.blade.php
+  -En el archivo web.php se cambia la ruta por defecto que apuntaba a welcome por dashboard
+  -Se borra la migración 2014_10_12_000000_create_users_table
+  -Se borra la migración 2014_10_12_100000_create_password_resets_table
+  -Se modifica la migración create_tasks_table
+  -Se modifica el archivo .env
+    -Se configura el archivo .env
+      DB_DATABASE=CRUDLaravel54-vue
+      DB_USERNAME=root
+      DB_PASSWORD=
+  -Se corrige el error por la longitud de la columna en la Base de Datos MariaDB
+    -Solución
+      -En app/Providers/appServiceProvider
+        -En la función boot, colocar  Schema::defaultStringLength(191);
+          Nota: No olvidar importar el Facade Schema
+            -use Illuminate\Support\Facades\Schema;
+  -Se elimina el modelo User
+  -Se usa el comando php artisan migrate:refresh
+  -Se crea el controlador TaskController como controlador de recursos
+    -php artisan make:controller TaskController --resource
+  -Se crea la ruta quitando la ruta show ya que no se va a utlizar
+    -Route::resource('tasks', 'TaskController', ['except' => 'show']);
+
