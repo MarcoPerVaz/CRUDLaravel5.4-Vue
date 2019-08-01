@@ -3,3 +3,22 @@ Commit - Creación del proyecto CRUD-Laravel5.4
 Commit - Creación Carpeta Instrucciones
   -Creación y guía de instalación con el archivo Instalación.txt
   -Creación del archivo GuíaCommits.txt
+Commit - Estructuración del proyecto CRUDLaravel5.4-Vue
+  Nota: Se prueba un poco como funciona Laravel-Mix - Se hace un diseño de prueba
+  -Se borra la carpeta resources/assets/js/componentes
+  -Se borra el archivo resources/assets/js/app.js
+  -Se borra el archivo resources/assets/js/bootstrap.js
+  -Se crea el archivo resources/assets/js/vue.js
+    -Incluye el contenido de esta página web https://vuejs.org/js/vue.js
+  -Se crea el archivo resources/assets/js/axios.js
+    -Incluye el contenido de esta página web https://raw.githubusercontent.com/axios/axios/master/dist/axios.js
+  -Se crea el archivo resources/assets/js/app.js
+    -Archivo para tener código personalizado de Vue
+    Nota: Este archivo me sale que fue modifificado pero fue creado, solo que toma el archivo app.js que fue eliminado
+  -Se usa el comando npm install para instalar todas las dependencias que están en package.json
+  -Se modifica el archivo webpack.mix.js
+  -Se usa el comando npm run dev para compilar 
+  -Se modifica la vista welcome.blade.php
+    -Se importa Bootstrap 3.3.7
+  -Se edita el archivo app.js
+  -Se usa el comando npm run dev
