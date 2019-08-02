@@ -62,3 +62,8 @@ Commit - Configurando seeder, factory y controlador
   -Se edita la función index de TaskController
   -Se edita la función edit de TaskController
   -Se edita la función destroy de TaskController
+Commit - Listado de Tareas con VueJs
+  -Se edita la vista dashboard.blade.php
+  -Se edita la vista app.blade.php
+  -Se edita el archivo app.js
+  -Se usa el comando npm run dev para compilar
