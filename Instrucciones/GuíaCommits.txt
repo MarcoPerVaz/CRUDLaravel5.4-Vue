@@ -96,3 +96,13 @@ Commit - Notificaciones con TOASTR
 Commit - Implementando Modal para el Form Crear
   -Se edita la vista dashboard
   -Se crea la vista create.blade.php
+Commit - Crear Tareas con VueJs
+  -Editar el modelo Task
+  -Se elimina la función create y edit de TaskController
+  -Se edita la ruta 
+    -Route::resource('tasks', 'TaskController', ['except' => 'show', 'create', 'edit']);
+  -Se edita la función store de TaskController
+    Nota: En la función store se crean las reglas de validación
+  -Se edita el archivo app.js creando la función createKeep()
+  -Se usa el comando npm run dev
+  -Se modifica la función index de TaskController para ordenar por ID
