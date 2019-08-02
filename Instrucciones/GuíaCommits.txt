@@ -114,3 +114,7 @@ Commit - Editar Tareas con VueJs
     -Se crea la función updateKeep
   -Se usa el comando npm run dev
   -Se edita la vista create.blade.php
+Commit - Actualizar Tareas con VueJs
+  -Se edita la función updateKeep del archivo app.js
+  -Se usa el comando npm run dev
+  -Se edita la función update de TaskController
