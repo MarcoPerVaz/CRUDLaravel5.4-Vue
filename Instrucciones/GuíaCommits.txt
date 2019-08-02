@@ -93,4 +93,6 @@ Commit - Notificaciones con TOASTR
   -Se usa el comando npm run dev
   -Se edita el archivo app.js para configurar toastr
   -Se usa el comando npm run dev
-    
+Commit - Implementando Modal para el Form Crear
+  -Se edita la vista dashboard
+  -Se crea la vista create.blade.php
