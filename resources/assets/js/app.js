@@ -6,7 +6,8 @@ new Vue({
   data: {
     keeps: [],
     newKeep: '',
-    errors: ''
+    errors: [],
+    fillKeep: {'id': '', 'keep': ''},
   },
   methods: {
     getKeeps: function(){
@@ -48,6 +49,14 @@ new Vue({
       }).catch(error => {
         this.errors = error.response.data;
       });
+    },
+    editKeep: function(keep){
+      this.fillKeep.id = keep.id;
+      this.fillKeep.keep = keep.keep;
+      $('#edit').modal('show');
+    },
+    updateKeep: function(){
+      alert('edicion');
     }
   }
 });

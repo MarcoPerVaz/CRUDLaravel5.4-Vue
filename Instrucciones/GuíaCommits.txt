@@ -106,3 +106,11 @@ Commit - Crear Tareas con VueJs
   -Se edita el archivo app.js creando la función createKeep()
   -Se usa el comando npm run dev
   -Se modifica la función index de TaskController para ordenar por ID
+Commit - Editar Tareas con VueJs
+  -Se crea y edita la vista edit.blade.php
+  -Se edita la vista dashboard para vincular la nueva vista creada
+  -Se edita el archivo app.js
+    -Se crea la función editKeep
+    -Se crea la función updateKeep
+  -Se usa el comando npm run dev
+  -Se edita la vista create.blade.php
