@@ -75,3 +75,22 @@ Commit - Eliminar Tareas con VueJs
   -Se crea la función deleteKeep en el archivo app.js
   -Se edita el botón de eliminar en la vista dashboard.blade.php
   -Se usa el comando npm run dev
+Commit - Notificaciones con TOASTR
+  -Se guarda el archivo boostrap.js en resources/js/bootstrap.css desde la url
+    -https://raw.githubusercontent.com/twbs/bootstrap/v3.3.7/dist/js/bootstrap.js
+  -Se guarda el archivo boostrap.css en resources/css/bootstrap.css desde la url
+    -https://raw.githubusercontent.com/twbs/bootstrap/v3.3.7/dist/css/bootstrap.css
+    Nota: La carpeta css no existe y se tuvo que crear
+  -Se guarda el archivo jquery.js en resources/js/jquery.js desde la url
+    -https://code.jquery.com/jquery-3.2.1.js
+  -Se guarda el archivo toastr.js en resources/js/toastr.js desde la url
+    -https://raw.githubusercontent.com/CodeSeven/toastr/master/toastr.js
+  -Se guarda el archivo toastr.css en resources/css/toastr.css desde la url
+    -https://raw.githubusercontent.com/CodeSeven/toastr/master/build/toastr.css
+  -Se edita el archivo webpack.mix.js para compilar todos los archivos recien creados
+    Nota: Tener en cuenta el orden porque algunas librerías dependen de otras
+  -Se edita la vista app.blade.php para vincular los archivos css compilados
+  -Se usa el comando npm run dev
+  -Se edita el archivo app.js para configurar toastr
+  -Se usa el comando npm run dev
+    
