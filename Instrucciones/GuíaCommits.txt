@@ -67,3 +67,11 @@ Commit - Listado de Tareas con VueJs
   -Se edita la vista app.blade.php
   -Se edita el archivo app.js
   -Se usa el comando npm run dev para compilar
+Commit - Eliminar Tareas con VueJs
+  -Se edita el seeder TasksTableSeeder
+  -Se usa el comando php artisan migrate:refresh --seed
+  -Se arregla un error en una clase de la tabla en la vista dashboard.blade.php 
+    -la clase sprite por striped
+  -Se crea la función deleteKeep en el archivo app.js
+  -Se edita el botón de eliminar en la vista dashboard.blade.php
+  -Se usa el comando npm run dev
