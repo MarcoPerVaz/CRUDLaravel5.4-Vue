@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+// Importado CRUDLaravel5.4-Vue
+use App\Task;
 
 class TaskController extends Controller
 {
@@ -13,7 +15,9 @@ class TaskController extends Controller
      */
     public function index()
     {
-        //
+        $tasks = Task::get();
+
+        return $tasks;
     }
 
     /**
@@ -45,7 +49,9 @@ class TaskController extends Controller
      */
     public function edit($id)
     {
-        //
+        $task = Task::findOrFail($id);
+
+        return $task;
     }
 
     /**
@@ -68,6 +74,8 @@ class TaskController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $task = Task::findOrfail($id);
+        
+        $task->delete();
     }
 }

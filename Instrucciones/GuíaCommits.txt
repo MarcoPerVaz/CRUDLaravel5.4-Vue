@@ -52,4 +52,13 @@ Commit - Estructuración de controlador, migración, vistas y rutas
     -php artisan make:controller TaskController --resource
   -Se crea la ruta quitando la ruta show ya que no se va a utlizar
     -Route::resource('tasks', 'TaskController', ['except' => 'show']);
-
+Commit - Configurando seeder, factory y controlador
+  -Se crea un seeder TasksTableSeeder
+    -php artisan make:seeder TasksTableSeeder
+  -Se registrar el seeder en DatabaseSeeder.php
+  -Se edita el seeder TasksTableSeeder
+  -Se edita el archivo ModelFactory.php
+  -Se usa el comando php artisan migrate:refresh --seed
+  -Se edita la función index de TaskController
+  -Se edita la función edit de TaskController
+  -Se edita la función destroy de TaskController
