@@ -118,3 +118,18 @@ Commit - Actualizar Tareas con VueJs
   -Se edita la función updateKeep del archivo app.js
   -Se usa el comando npm run dev
   -Se edita la función update de TaskController
+Commit - Paginación con VueJs
+  -Se edita la función index de TaskController
+  -Se edita la función getKeeps de app.js
+  -Se usa el comando npm run dev
+  -Se edita el archivo app.js
+    -Se crean las variables de paginación
+    -Se edita la función getKeeps()
+  -Se usa el comando npm run dev
+  -Se crean 2 propiedades computadas en app.js
+  -Se crea la función changePages en app.js
+  -Se edita la función getKeeps() en app.js
+  -Se usa el comando npm run dev
+  -Se edita la función index de TaskController
+  -Se edita la vista dashboard.blade.php
+Fin
